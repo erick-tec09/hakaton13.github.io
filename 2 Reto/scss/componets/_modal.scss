@@ -1,0 +1,102 @@
+
+
+.modal{
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #FFBB02;
+    z-index: 10000;
+    display: none;
+    
+  
+}
+
+.contenedor{
+    
+}
+.form{
+    width: 400px;
+    
+    &__title{
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__grup{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+
+        color: white;
+     margin: 10px 0px;
+     text-transform: uppercase;
+    }
+    &__input{
+        
+        border: none;
+        padding: 10px ;
+    }
+    &__filecontainer{
+        
+        width: 200px;
+        height: 30px;
+        background: red;
+        
+       
+       
+    }
+    
+    &__file{
+        
+       
+        cursor: pointer;
+       
+       
+       
+          
+         
+      }
+    &__btn{
+        color: white;
+        background: #FFBB02;
+        padding: 10px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        margin-top: 20px;
+        transition: all 0.5s;
+        &:hover{
+            background: #dda304;
+            cursor: pointer;
+
+        }
+    }
+    &__close{
+        color: white;
+        background: #222222;
+        padding: 10px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        margin-top: 20px;
+        transition: all 0.5s;
+        &:hover{
+            background: #000000;
+            cursor: pointer;
+
+        }
+    }
+
+}
+
+
+.active__modal{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
