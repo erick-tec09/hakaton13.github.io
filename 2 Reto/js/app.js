@@ -35,8 +35,6 @@ class ui{
        const contenido= document.getElementById('contenido')
        const element = document.createElement('div')
        element.innerHTML=`
-       
-
        <div class="card">
                 <div class="card__header">
                     <i class="fas fa-edit card__icon"></i>
@@ -83,12 +81,13 @@ class ui{
     const email = document.getElementById('email').value
     const pais = document.getElementById('pais').value
     const Descripcion = document.getElementById('comentario').value
-    //console.log(nombre,Tele,email,pais,Descripcion)
-      
     const newDogs= new cardDog(nombre,Tele,email,pais,Descripcion)
 
     const UI = new ui()
     UI.addDog(newDogs)
+
+
+
     UI.resetForm()
 
     e.preventDefault()
